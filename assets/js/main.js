@@ -249,7 +249,7 @@ const mostrarpreguntas = () => {
 
         tituloCategoria.innerText = getData[next].category
         numeroDePreguntas.innerText = `Pregunta # ${next + 1}`
-        preguntas.innerText = getData[next].question
+        preguntas.innerHTML = getData[next].question
 
 
         // AGREGANDO ATRIBUTOS A LOS ELEMENTOS
@@ -273,7 +273,7 @@ const mostrarpreguntas = () => {
             const radiobutton = document.createElement("input")
             const labelrespuestas = document.createElement("label")
             //Agregando contenido 
-            labelrespuestas.innerText = preguntas_incorrectas[i]
+            labelrespuestas.innerHTML = preguntas_incorrectas[i]
             //Agregando atributos
             labelrespuestas.className = "main-label"
             radiobutton.type = "radio"
@@ -347,12 +347,12 @@ const resultadoFinal = () => {
 
         // AGREGANDO CONTENIDO A LOS ELEMNTOS HTML
         ResultadoFinal.innerText = "Resultado"
-        preguntas_correctas.innerText = `Respuestas Correctas ${score} De ${getData.length}`
+        preguntas_correctas.innerHTML = `Respuestas Correctas ${score} De ${getData.length}`
         totalScore.innerText = `Total Puntaje ${score * 50}`
         anteriroScore.innerText = `Puntaje Anterior ${localStorage.getItem("puntaje")}`
         tituloCategoria.innerText = element.category
-        numeroDePreguntas.innerText = `Pregunta # ${index + 1}`
-        preguntas.innerText = element.question
+        numeroDePreguntas.innerHTML = `Pregunta # ${index + 1}`
+        preguntas.innerHTML = element.question
 
         // AGREGANDO ATRIBUTOS A LOS ELEMENTOS
         ResultadoFinal.className = "ResultadoFinal"
@@ -408,7 +408,7 @@ const resultadoFinal = () => {
 
                 const respuestas = element.incorrect_answers[i]
                 //Agregando contenido 
-                labelrespuestas.innerText = respuestas
+                labelrespuestas.innerHTML = respuestas
                 //Agregando atributos
                 labelrespuestas.className = "main-label"
 
