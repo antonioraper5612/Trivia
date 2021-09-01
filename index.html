@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <title>TRIVIA</title>
+</head>
+
+<body>
+    <section class="inicio" id="inicio">
+        <h1 class="tituloPrincipal">bienbenido a la <span>trivia</span> </h1>
+        <div class="container  main-content-formulario " id="contentFormulario">
+            <form action="" id="main-form">
+                <div class="form-group">
+                    <label for="NumeroPreguntas">Number of Questions: </label>
+                    <input type="number" name="" id="NumeroPreguntas" value="3">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select name="category" id="category">
+                        <option value="any">Any Category</option>
+                        <option value="9">General Knowledge</option>
+                        <option value="10">Entertainment: Books</option>
+                        <option value="11">Entertainment: Film</option>
+                        <option value="12">Entertainment: Music</option>
+                        <option value="13">Entertainment: Musicals &amp; Theatres</option>
+                        <option value="14">Entertainment: Television</option>
+                        <option value="15">Entertainment: Video Games</option>
+                        <option value="16">Entertainment: Board Games</option>
+                        <option value="17">Science &amp; Nature</option>
+                        <option value="18">Science: Computers</option>
+                        <option value="19">Science: Mathematics</option>
+                        <option value="20">Mythology</option>
+                        <option value="21">Sports</option>
+                        <option value="22">Geography</option>
+                        <option value="23">History</option>
+                        <option value="24">Politics</option>
+                        <option value="25">Art</option>
+                        <option value="26">Celebrities</option>
+                        <option value="27">Animals</option>
+                        <option value="28">Vehicles</option>
+                        <option value="29">Entertainment: Comics</option>
+                        <option value="30">Science: Gadgets</option>
+                        <option value="31">Entertainment: Japanese Anime &amp; Manga</option>
+                        <option value="32">Entertainment: Cartoon &amp; Animations</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label for="">difficulty: </label>
+                    <select name="difficulty" id="difficulty" class="form-control">
+                        <option value="any">Any Difficulty</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">Select Type: </label>
+                    <select name="type" id="type" class="form-control">&gt;
+                        <option value="any">Any Type</option>
+                        <option value="multiple">Multiple Choice</option>
+                        <option value="boolean">True / False</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Select Encoding: </label>
+                    <select name="encode" id="encode" class="form-control">&gt;
+                        <option value="default">Default Encoding</option>
+                        <option value="urlLegacy">Legacy URL Encoding</option>
+                        <option value="url3986">URL Encoding (RFC 3986)</option>
+                        <option value="base64">Base64 Encoding</option>
+                    </select>
+                </div>
+                <div class="btn-enviar">
+                    <button type="submit">Empezar Trivia</button>
+                </div>
+            </form>
+            <div class="intruciones">
+                <p>
+                <h3>intruciones del juego</h3>
+                todos los campos son obligatorios,
+                sino eleges ninguna opcion sus preguntas se elegiran
+                de forma aleatoria.
+                Cada pregunta respondida correctamente
+                tiene un puntaje de 50 puntos
+                </p>
+                <div class="container-img-cuestions">
+                    <img src="assets/img/iconos/001-trophy.svg" alt="">
+                </div>
+                <div class="main-score">
+                    <label for="scoremaximo">PUNTUACION MAXIMA</label>
+                    <input type="text" id="scoremaximo" disabled placeholder="0" > 
+                    <label for="">PUNTOS</label>
+                    <button id="Reset">Reset</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <section class="container">
+        <div class="main-content" id="main-content">
+
+
+        </div>
+
+    </section>
+    <!-- <div class="container containerButton">
+        <button id="buttonNext">Next</button> -->
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

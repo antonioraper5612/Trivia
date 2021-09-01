@@ -1,0 +1,358 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #111111;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+
+
+ .container{
+    margin: auto;
+      width: 90%;
+     
+  }
+
+
+
+.tituloPrincipal{
+    color: #0000FF;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+.tituloPrincipal span{
+    color: #fff;
+}
+
+.main-content-formulario{
+    margin-top:20px ;
+    background-color:#fff;
+    border-radius: 20px;
+    display: flex;
+    width: 45%;
+    /* background-color: aqua; */
+}
+.main-content-formulario form{
+    /* background-color: #0000FF; */
+    width: 55%;
+    /* background-color: chartreuse; */
+}
+
+.form-group{
+display: flex;
+flex-direction: column;
+padding-bottom: 2px;
+margin: 10px 20px;
+
+}
+
+.form-group label{
+    margin: 10px 0;
+}
+
+.form-group input{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+.form-group select{
+ padding: 10px;
+ border-radius: 10px;
+ outline: none;
+}
+
+
+.btn-enviar{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-enviar button{
+    border: none;
+    padding: 15px 40px;
+    border-radius: 20px;
+    background-color: #0000FF;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* INTRUCCIONES */
+.intruciones{
+  width: 40%;
+  margin: 0 10px;
+}
+.intruciones h3{
+    text-transform: uppercase;
+    margin:10px 0;
+}
+.intruciones p{
+    font-weight: 400;
+    margin-bottom:30px ;
+}
+
+.container-img-cuestions{
+ display: flex;
+ justify-content: center;
+}
+
+.container-img-cuestions img{
+    width: 50px;
+    margin-bottom: 20px;
+ }
+ .main-score{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .main-score input{
+     outline: none;
+     width: 100px;
+     padding:10px;   
+      border-radius: 20px;
+ }
+
+ .main-score label{
+    color: #0000FF;
+    font-weight: 900;
+ }
+
+ #scoremaximo{
+  text-align: center;
+  color: #8484a1;
+  font-size: 2rem;
+ }
+
+ #Reset{
+     margin-top: 10px;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 20px;
+    background-color: #0000FF;
+    color: white;
+    margin-bottom: 15px;
+ }
+
+/* TERMINA FORMULARIO DE OPCIONES DE LA TRIVIA */
+
+
+
+.main-content{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin:50px auto;
+    background-color: #fff;
+    width: 60%;
+    border-radius: 15px;
+    transition: all 4s ease;
+     
+  }
+
+
+.img_title{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* Contenedor imagen y categoria */
+.containerTitleCategory{
+    margin-top: 20px;
+display: flex;
+align-items: center;    
+}
+
+/* IMAGENES DE CATEGORIAS */
+.img-category{
+    width: 40px;
+   }
+
+   .titlecategory {
+    padding: 0 20px;   
+    color: #0000FF; 
+  }
+ 
+
+  /* Contenedor de # Preguntas */
+  .numeroPreguntas{
+    padding: 20px 0;
+    text-align:left ;
+}
+.preguntas{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+ /* los label */
+.main-label{
+    background-color:#0000FF;
+    color: #fff;
+    padding: 20px 15px;
+    width: 230px;
+    border-radius: 10px;
+    margin:10px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  
+}
+
+/* los radio */
+.main-redio{
+    width: 30px;
+}
+
+
+ .content-Respuesta{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   align-content: center;
+   transition: all 4s ease;
+ }
+
+
+ 
+ .container-button{
+     display: flex;
+     justify-content: center;
+ }
+
+ .container-button button{
+   padding: 10px 30px;
+   border-radius: 15px;
+   color: #fff;
+   background-color: #0000FF;
+   border: none;
+}
+
+
+
+.main-labelCorrecta{
+    background-color:rgb(67, 255, 67);
+    color: #fff;
+    padding: 20px 15px;
+    width: 230px;
+    border-radius: 10px;
+    margin:10px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    transition: all 4s ease;
+  
+}
+
+.main-labelIncorrecta{
+    background-color:rgba(231, 13, 13, 0.945);
+    color: #fff;
+    padding: 20px 15px;
+    width: 230px;
+    border-radius: 10px;
+    margin:10px 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  
+}
+
+
+
+.Finish{
+    border: none;
+    padding: 15px 40px;
+    border-radius: 20px;
+    background-color: #0000FF;
+    color: white;
+    margin: 30px 0;
+}
+
+.ResultadoFinal{
+    color: #0000FF;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.preguntas_correctas{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* .totalScore{
+    color: red;
+}
+
+.anteriroScore{
+ color: #70f770;
+} */
+
+
+@media(max-width: 1200px){
+    .container{
+          width: 50%;         
+      }
+    
+      .main-content{
+        width: 80%;         
+      }
+    
+}
+
+
+@media(max-width: 992px){
+    .container{
+          width: 90%;         
+      }
+    
+      .main-content{
+        width: 90%;         
+      }
+    
+}
+
+
+@media(max-width: 776px){
+    .container{
+          width: 80%;         
+      }
+    
+      .main-content{
+        width: 90%;         
+      }
+    
+}
+@media(max-width: 576px){
+    .container{
+          width: 95%;         
+      }
+      .main-content-formulario{
+         display: block;
+        }
+        .main-content-formulario form{
+            width: 100%;
+        }
+        .intruciones{
+            width: 100%;
+          }
+          .main-content{
+            width: 100%;         
+          }
+    
+   
+
+}
